@@ -26,11 +26,11 @@ function findGuest(names, guest){
     }
   }
   if(result == true){
-    return `${guest} está na lista.`
+    return `O nome está na lista.`
   } else {
-    return `${guest} não está na lista.`
+    return `O nome não está na lista.`
   }
   
 }
 
-module.exports = findGuest([`fran`, `joao`, 'Bruna', 'Joaquim', 'Julia', 'Amanda', `felipe`], `felipe`);
+module.exports = findGuest;

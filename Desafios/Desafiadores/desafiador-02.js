@@ -22,7 +22,16 @@ Se o valor recebido for igual a zero ou não for do tipo number, retorne:
 */
 
 function squareRoot(number){
-  // Desenvolva seu código nessa função
+  let raiz = Math.sqrt(number)
+  let par = raiz % 2
+  console.log(`é par ` + par)
+  if(par == 0){
+    return `A raiz quadrada de ${number} é: ${raiz}.`
+  } else if(par != 0){
+    return `Não existe raiz exata para o número ${number}.`
+  } else if(number === 0 || number == NaN ){
+    return `Número inválido.`
+  }
 }
 
 module.exports = squareRoot;

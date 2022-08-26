@@ -21,9 +21,8 @@ Obs: Os retornos tem que ser dados do tipo boolean.
 function dataType(types) {
     let result = true;
     let compara = typeof types[0];
-    let i = 1;
 
-    for (i; i < types.length; i++) {
+    for (let i = 1; i < types.length; i++) {
         if (typeof types[i] == compara) {
         } else {
             result = false;
@@ -33,4 +32,4 @@ function dataType(types) {
     return result;
 }
 
-module.exports = dataType(["Daniel", "Marcos", "Daniel", "Marcos"]);
+module.exports = dataType;
