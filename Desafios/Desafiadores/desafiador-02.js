@@ -21,16 +21,15 @@ Se o valor recebido for igual a zero ou não for do tipo number, retorne:
 
 */
 
-function squareRoot(number){
-  let raiz = Math.sqrt(number)
-  let par = raiz % 2
-  console.log(`é par ` + par)
-  if(par == 0){
-    return `A raiz quadrada de ${number} é: ${raiz}.`
-  } else if(par != 0){
-    return `Não existe raiz exata para o número ${number}.`
-  } else if(number === 0 || number == NaN ){
+function squareRoot(number) {
+  let raiz = Math.sqrt(number);
+
+  if (number === 0 || typeof(number) != `number`) {
     return `Número inválido.`
+  } else if (raiz %1 === 0) {
+    return `A raiz quadrada de ${number} é: ${raiz}.`
+  } else {
+    return `Não existe raiz exata para o número ${number}.`
   }
 }
 
