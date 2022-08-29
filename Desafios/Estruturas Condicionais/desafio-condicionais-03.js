@@ -24,8 +24,31 @@ Caso o nome informado não faça parte do esquadrão, retorne:
 
  */
 
-function findAdventurous(adventurous){
-  // Desenvolva seu código nessa função
+function findAdventurous(adventurous) {
+    switch (adventurous) {
+        case `Tunico`:
+            return `Mestre dos Magos`;
+            break;
+        case `Cremoso`:
+            return `Cavaleiro Negro`;
+            break;
+        case `Gordinho`:
+            return `Pirata`;
+            break;
+        case `Lobo Solitário`:
+            return `Samurai`;
+            break;
+        case `Ousado`:
+            return `Mago`;
+            break;
+        case `Anjo Loiro`:
+            return `Clérigo`;
+            break;
+
+        default:
+            return "Aventureiro não encontrado";
+            break;
+    }
 }
 
 module.exports = findAdventurous;

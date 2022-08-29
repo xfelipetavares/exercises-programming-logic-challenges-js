@@ -40,7 +40,23 @@ function studentSituation(studentNote) {
 */
 
 function studentSituation(studentNote){
-  // Desenvolva seu código nessa função
+  let status = ``
+
+  if(studentNote <= 10){
+    status = 'PÉSSIMO';
+  } else if (studentNote > 10 && studentNote <= 30){
+    status = 'RUIM';
+  } else if (studentNote > 30 && studentNote <= 50){
+    status = 'REGULAR';
+  } else if (studentNote > 50 && studentNote <= 70){
+    status = 'MEDIANO';
+  } else if (studentNote > 70 && studentNote <= 90){
+    status = 'ÓTIMO';
+  } else {
+    status = 'EXCELENTE';
+  }
+
+  return status
 }
 
 module.exports = studentSituation;
