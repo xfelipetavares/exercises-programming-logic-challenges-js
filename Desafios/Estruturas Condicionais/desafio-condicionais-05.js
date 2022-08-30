@@ -30,7 +30,13 @@ Caso contrário retorne:
 */
 
 function robotFriend(mon, dad, me, brother, sister){
-  // Desenvolva seu código nessa função
+  if(mon || dad || me){
+    return `Things I do for love...`
+  } else if (brother && sister){
+    return `Things I do for love...`
+  } else {
+    return `Not today.`
+  }
 }
 
 module.exports = robotFriend;

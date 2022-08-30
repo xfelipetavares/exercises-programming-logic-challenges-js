@@ -16,7 +16,13 @@ Saída:
 */
 
 function encode(string){
-  // Desenvolva seu código nessa função
+  let result = ``
+
+  for(let i = 0; i < string.length; i++){
+    result = result + i * 3
+  }
+  
+  return result
 }
 
 module.exports = encode;

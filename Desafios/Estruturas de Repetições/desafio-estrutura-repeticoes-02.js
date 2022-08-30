@@ -15,7 +15,12 @@ Considerando a mesma lógica, escreva um algoritmo que irá somar todos números
 */
 
 function accumulator(limit){
-  // Desenvolva seu código nessa função
+  let accumulator = 0
+  let contador = 1
+	for(contador; contador <= limit; contador++){
+		accumulator = accumulator + contador
+  }
+  return accumulator
 }
 
 module.exports = accumulator;

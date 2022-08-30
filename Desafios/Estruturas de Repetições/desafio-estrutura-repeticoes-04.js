@@ -16,7 +16,11 @@ Saída:
 */
 
 function repeatName(name, quantity) {
-  // Desenvolva seu código nessa função
+  let result = `${name}`
+  for(let i = 1; i < quantity; i++){
+    result = result + `, `+`${name}`
+  }
+  return `${result}.`
 }
 
 module.exports = repeatName;
