@@ -18,7 +18,16 @@ Obs: Não utilize o includes, você deve encontrar os valores utilizando 2 for's
 */
 
 function includesArrays(a, b){
-  // Desenvolva seu código nessa função
+  let result = []
+  for(let i = 0; i < a.length; i++){
+    for(let j = 0; j < b.length; j++){
+      if(a[i] == b[j]){
+        result.push(b[j])
+      }
+    }
+  }
+  console.log(result)
+  return result
 }
 
 module.exports = includesArrays;

@@ -13,8 +13,15 @@ Use a seguinte estrutura no retorno:
 
 */
 
-function oddNumbers(){
-  // Desenvolva seu código nessa função
+function oddNumbers() {
+    let result = `1`;
+    for (let i = 2; i <= 50; i++) {
+        if (i % 2 != 0) {
+            result = `${result}, ${i}`;
+        }
+    }
+    console.log(result);
+    return `${result}.`;
 }
 
 module.exports = oddNumbers;

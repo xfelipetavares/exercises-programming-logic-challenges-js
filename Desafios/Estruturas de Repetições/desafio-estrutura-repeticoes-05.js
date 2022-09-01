@@ -24,14 +24,12 @@ function numbersDivisibleBy3(start, limit) {
         if (i % 3 === 0) {
             result = result + 1;
         }
-        console.log(result)
-
-        if (result < 50) {
-            return `Sequência muito pequena.`;
-        } else {
-            return `Há 50 ou mais números diviseis por 3.`;
-        }
     }
+        if (result >= 50) {
+            return `Há 50 ou mais números diviseis por 3.`;
+        } else {
+            return `Sequência muito pequena.`;
+        }
 }
 
 module.exports = numbersDivisibleBy3;
