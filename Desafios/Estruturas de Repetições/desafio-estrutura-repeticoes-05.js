@@ -17,8 +17,21 @@ Caso o contrário:
 
 */
 
-function numbersDivisibleBy3(start, limit){
-  // Desenvolva seu código nessa função
+function numbersDivisibleBy3(start, limit) {
+    let result = 0;
+
+    for (let i = start; i <= limit; i++) {
+        if (i % 3 === 0) {
+            result = result + 1;
+        }
+        console.log(result)
+
+        if (result < 50) {
+            return `Sequência muito pequena.`;
+        } else {
+            return `Há 50 ou mais números diviseis por 3.`;
+        }
+    }
 }
 
 module.exports = numbersDivisibleBy3;
