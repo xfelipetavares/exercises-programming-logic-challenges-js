@@ -15,8 +15,20 @@ Saída:
 
 */
 
-function sortAgeAsc(mariaAge, silviaAge, izaAge){
-  // Desenvolva seu código nessa função
+function sortAgeAsc(mariaAge, silviaAge, izaAge) {
+    let names = [mariaAge, silviaAge, izaAge];
+    let maisNova = names[0];
+    let result;
+    for (let i = 0; i < names.length; i++) {
+        if (names[i] < maisNova) {
+            maisNova = names[i];
+        }
+    }
+    for(let i = 0; i < names.length; i++){
+      if(names[i] ){
+        maisNova = `${maisNova}, ${names[i]}`
+      }
+    }
 }
 
 module.exports = sortAgeAsc;

@@ -17,7 +17,8 @@ Saída:
 */
 
 function reverseNames(fullName) {
-  // Desenvolva seu código nessa função
+	let inverterName = fullName.split(` `)
+	return `${inverterName[1]} ${inverterName[0]}`
 }
 
 module.exports = reverseNames;

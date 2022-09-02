@@ -42,7 +42,7 @@ function evaluateProject(obj) {
         return `Parabéns, você está aprovado(a)!`;
     } else if (obj.rec == true && obj.completed == calc2) {
         return `Parabéns, você está aprovado(a)!`;
-    } else if (obj.completed < calc1) {
+    } else {
         return `Você ainda precisa entregar mais requisitos ;)`;
     }
 }

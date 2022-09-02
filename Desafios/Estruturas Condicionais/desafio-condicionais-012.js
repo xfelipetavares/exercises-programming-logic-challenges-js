@@ -5,7 +5,7 @@
 A classificação do Índice de Massa Corporal (IMC), pode ajudar a identificar obesidade ou desnutrição em crianças, adolescentes, adultos e idosos.
 
 O IMC é a relação entre peso e altura e o cálculo é feito de acordo com a fórmula:
- * IMC = peso/ (altura x altura)
+* IMC = peso/ (altura x altura)
 
 Onde o peso é dado em Kg (quilogramas), a altura em m (metros) e o IMC em kg/m2 (quilograma por metro quadrado).
 
@@ -24,11 +24,28 @@ Retorne a resultado no seguinte formato:
 "Seu IMC é: 23.7 kg/m2. O resultado foi: Normal"
 ------------------------------------------------
 
- */
+*/
 
-function IMC(weight, height){
-  // Desenvolva seu código nessa função
+// * IMC = peso/ (altura x altura)
+function IMC(weight, height) {
+    let stats = ``;
+    const imc = weight / (height * height);
+    switch (true) {
+        case imc < 18.5:
+            stats = `Magreza`;
+            break;
+        case imc >= 18.5 && imc <= 24.9:
+            stats = `Normal`;
+            break;
+        case imc > 24.9 && imc <= 30:
+            stats = `Sobrepeso`;
+            break;
+        default:
+            stats = `Obesidade`;
+            break;
+    }
+    console.log(stats);
+    return `Seu IMC é: ${imc.toFixed(1)} kg/m2. O Resultado foi: ${stats}`;
 }
 
-module.exports = IMC;3
-
+module.exports = IMC;

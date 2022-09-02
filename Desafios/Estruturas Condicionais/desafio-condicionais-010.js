@@ -38,8 +38,8 @@ Caso o contrário, retorne:
 
 */
 
-function droneDelivery(heightBox, widthBox, depthBox, heightWindow, widthWindow, depthWindow){
-  // Desenvolva seu código nessa função
+function droneDelivery(heightBox, widthBox, depthBox, heightWindow, widthWindow, depthWindow) {
+  
 }
 
 module.exports = droneDelivery;
