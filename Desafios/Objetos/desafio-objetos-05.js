@@ -46,7 +46,20 @@ Desafio: faça sem usar estruturas condicionais (ifs ou switches).
 */
 
 function fantasyGame3(className, level) {
-  // Desenvolva seu código nessa função
+  let classes = {
+        Mago: [5, `Varinha`, 2],
+        Arqueiro: [10, `Arco Curto`, 3],
+        Guerreiro: [15, `Espada`, 4],
+        Cavaleiro: [20, `Armadura Completa`, 5],
+    };
+
+    // formula para achar achar o hp total
+    const calc = (classes[className][0]) + ((level - 1) * classes[className][2])
+
+    return `${className}, nível ${level}: ${calc}PV, ${classes[className][1]}.`
+
+
+    
 }
 
 module.exports = fantasyGame3;

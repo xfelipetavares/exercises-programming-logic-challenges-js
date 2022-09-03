@@ -19,7 +19,15 @@ O retorno deve ser no seguinte formato:
 */
 
 function getOldPerson(arrPeople) {
-  // Desenvolva seu código nessa função
+  let comparaIdade = arrPeople[0].age
+  let nome = arrPeople[0].name
+  for(let i = 1; i < arrPeople.length; i++){
+    if(arrPeople[i].age > comparaIdade){
+      comparaIdade = arrPeople[i].age
+      nome = arrPeople[i].name
+    }
+  }
+  return `${nome} tem a maior idade com ${comparaIdade} anos.`
 }
 
 module.exports = getOldPerson;

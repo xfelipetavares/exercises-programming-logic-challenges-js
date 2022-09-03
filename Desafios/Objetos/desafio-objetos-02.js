@@ -30,7 +30,13 @@ Desafio: faça sem usar estruturas condicionais (ifs ou switches).
 */
 
 function fantasyGame2(className) {
-  // Desenvolva seu código nessa função
+    let classes = {
+        Mago: [5,`Varinha`],
+        Arqueiro: [10, `Arco Curto`],
+        Guerreiro: [15, `Espada`],
+        Cavaleiro: [20, `Armadura Completa`],
+    };
+    return `${classes[className][0]}PV, ${classes[className][1]}.`
 }
 
 module.exports = fantasyGame2;
